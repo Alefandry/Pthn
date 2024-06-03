@@ -1,0 +1,5 @@
+import my_module
+
+print(my_module.circle_area(5))
+print(my_module.average_grade([3, 4, 5, 2, 3]))
+print(my_module.sber_stock_count(5000))
