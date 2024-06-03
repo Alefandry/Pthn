@@ -5,4 +5,4 @@ while True:
             break
     elif n.isdigit() is not True:
         raise TypeError("Ошибка типа данных, введено слово. Попробуйте снова")
-    else: print("Символов в числе:",len(str(n)))
+    else: print("Символов в числе:",len(str(n))) 
