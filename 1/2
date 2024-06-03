@@ -18,4 +18,4 @@ for j in mas:
             summa1 += abs(j)
         else:
             break
-print ("Сумма положительных чисел:",summa1)  
+print ("Сумма положительных чисел:",summa1)   
