@@ -1,0 +1,21 @@
+i = int(input("Введите число:"))
+mas=[]
+for i in range(-i,i+1):
+    mas.append(i)
+    summa=summa1=0
+#Сумма отрицательная
+    for n in mas:
+            if n < 0:
+                summa += n
+            else:
+                break
+
+print ("Интервал ",mas)      
+print ("Сумма отрицательных чисел:",summa)
+#сумма положительных
+for j in mas:
+        if j < 0:
+            summa1 += abs(j)
+        else:
+            break
+print ("Сумма положительных чисел:",summa1)  
