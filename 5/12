@@ -1,0 +1,16 @@
+import os
+from datetime import datetime
+
+# Создание директории с текущей датой и перемещение файла
+current_date = datetime.now().strftime("%Y-%m-%d")
+os.mkdir(current_date)
+
+file_path = os.path.join(current_date, "example.txt")
+with open(file_path, 'w') as file:
+    pass
+
+new_directory = os.path.join(current_date, "subdirectory")
+os.mkdir(new_directory)
+
+new_file_path = os.path.join(new_directory, "example.txt")
+os.rename(file_path, new_file_path)
