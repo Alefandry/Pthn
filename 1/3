@@ -1,0 +1,15 @@
+abc = int(input("Введите три разных цифры:"))
+a = abc // 100  #Первая цифра числа
+b = (abc % 100) // 10  #Предпоследняя цифра числа
+c = abc % 10   #Последняя цифра числа
+if a==b or a==c or b==c or a==b==c:
+    print("Введены одинаковые цифры")
+elif len(str(abc)) !=3:
+    print("Введено больше трех цифр")
+else:
+    print(a, b, c)
+    print(a, c, b)
+    print(b, a, c)
+    print(b, c, a)
+    print(c, a, b)
+    print(c, b, a)
